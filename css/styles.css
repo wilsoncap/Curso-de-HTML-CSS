@@ -1,7 +1,7 @@
 html, body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(222, 198, 245);
+    background-color: rgb(254, 253, 255);
     font-size: 12px;
     font-family: Helvetica;
 }
@@ -39,3 +39,55 @@ nav li a:hover{
     color: white;
 }
 
+/* ---------------Main section */
+
+.main_section{
+    border: 1px solid red;
+    padding: 15%;
+    text-align: center;
+}
+
+.products{
+    background-image: url("../images/curve.webp");
+    max-height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.product{
+    padding: 10px;
+    margin-top: -260px;
+    /* width: 30%; */
+    
+}
+
+.product .content{
+    border: 1px solid blue;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 1px #c1bcbc;
+}
+
+.img_content{
+    /* padding-bottom: 30px; */
+    text-align: center;
+
+}
+
+.main_button{
+    background: #7acc2d;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.main_button:hover{
+    background: #62883e;
+}
