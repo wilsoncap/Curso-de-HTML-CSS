@@ -1,8 +1,28 @@
+/* -------Variables */
+:root{
+--green-color:#7acc2d;
+--white-color: white;
+--black-color: rgb(34, 31, 31);
+/* ---espaciado */
+--espace:10px;
+
+/* ---Tipografia */
+--normal:12px;
+
+/* ---box-shadow */
+--box: 0 0 2px 1px #c1bcbc;
+}
+/* -------Variables */
+
+
+
+
+
 html, body{
     margin: 0px;
     padding: 0px;
     background-color: rgb(254, 253, 255);
-    font-size: 12px;
+    font-size: var(--normal);
     font-family: Helvetica;
 }
 
@@ -13,9 +33,9 @@ html, body{
 
 nav{
     /* border: 1px solid red; */
-    background: #7acc2d;
-    padding: 10px;
-    color: white;
+    background: var(--green-color);
+    padding: var(--espace);
+    color: var(--white-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,11 +52,11 @@ nav li{
 
 nav li a{
     text-decoration: none;
-    color: rgb(83, 75, 75);
+    color: var(--black-color);
 }
 
 nav li a:hover{
-    color: white;
+    color: var(--white-color);
 }
 
 /* ---------------Main section */
@@ -52,23 +72,23 @@ nav li a:hover{
     max-height: 50px;
     background-size: cover;
     background-position: center top;
-    padding: 15%;
+    padding: 10%;
     display: flex;
     justify-content: center;
 }
 
 .product{
-    padding: 10px;
-    margin-top: -260px;
+    padding: var(--espace);
+    margin-top: -290px;
     /* width: 30%; */
     
 }
 
 .product .content{
-    border: 1px solid blue;
-    background: white;
-    padding: 10px;
-    box-shadow: 0 0 1px #c1bcbc;
+    /* border: 1px solid blue; */
+    background: var(--white-color);
+    padding: var(--espace);
+    box-shadow: var(--box);
 }
 
 .img_content{
@@ -78,16 +98,68 @@ nav li a:hover{
 }
 
 .main_button{
-    background: #7acc2d;
+    background: var(--green-color);
     width: 100%;
-    padding: 10px;
-    font-size: 17px;
+    padding: var(--espace);
+    font-size: var(--normal);
     border: 0;
     border-radius: 2px;
-    color: white;
+    color: var(--white-color);
     cursor: pointer;
 }
 
 .main_button:hover{
     background: #62883e;
+}
+
+.content{
+    width: 220px;
+}
+
+/* ------------------information */
+
+.information{
+    background: gold;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid grey;
+}
+
+.information-content{
+background: white;
+width: 250px;
+}
+
+/* ------------------testimonies */
+.testimonies{
+    height: 300px;
+    text-align: center;
+   
+   
+}
+.testimonies-content{
+    border: 1px solid blue;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.testimonies-person{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+
+
+
+
+/* ------------------footer */
+.footer{
+    height: 50px;
+    background: rgb(48, 46, 46);
+   
 }
