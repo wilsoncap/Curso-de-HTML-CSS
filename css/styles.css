@@ -5,9 +5,13 @@
 --black-color: rgb(34, 31, 31);
 /* ---espaciado */
 --espace:10px;
+--espace-double:20px;
 
 /* ---Tipografia */
 --normal:12px;
+--normal-14:14px;
+--normal-16:16px;
+--normal-18:18px;
 
 /* ---box-shadow */
 --box: 0 0 2px 1px #c1bcbc;
@@ -63,13 +67,13 @@ nav li a:hover{
 
 .main_section{
     border: 1px solid red;
-    padding: 15%;
+    padding: 13% 28%;
     text-align: center;
 }
 
 .products{
     background-image: url("../images/curve.webp");
-    max-height: 50px;
+    max-height: 25px;
     background-size: cover;
     background-position: center top;
     padding: 10%;
@@ -101,7 +105,8 @@ nav li a:hover{
     background: var(--green-color);
     width: 100%;
     padding: var(--espace);
-    font-size: var(--normal);
+    font-size: var(--normal-16);
+    font-weight: bold;
     border: 0;
     border-radius: 2px;
     color: var(--white-color);
@@ -114,23 +119,54 @@ nav li a:hover{
 
 .content{
     width: 220px;
+    text-align: center;
+}
+
+.content h1{
+    margin: var(--espace);
+}
+
+.content p{
+    margin: var(--espace);
 }
 
 /* ------------------information */
 
 .information{
-    background: gold;
+   background: var(--white-color);
     height: 300px;
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
+    /* margin: 10px; */
+    box-shadow: 5px 5px 5px #aaa
 }
 
 .information-content{
-background: white;
+background: var(--white-color);
 width: 250px;
+padding: 10px;
+text-align: center;
+margin: var(--espace);
 }
+
+.information-img{
+    height: 180px;
+    text-align: center;
+    
+}
+
+.information-img img{
+    height: 180px;
+    
+}
+
+.information-content p{
+    text-align: left;
+}
+
+
 
 /* ------------------testimonies */
 .testimonies{
@@ -140,17 +176,27 @@ width: 250px;
    
 }
 .testimonies-content{
-    border: 1px solid blue;
+    /* border: 1px solid grey; */
     margin: 20px;
     height: 200px;
     width: 200px;
+    box-shadow: var(--box);
+    border-radius: 10px;
 }
 
 .testimonies-person{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
  
+}
+
+.testimonies-img img{
+   height: 100px;
+   border-top-left-radius:10px;
+   border-top-right-radius:10px
+   
 }
 
 
