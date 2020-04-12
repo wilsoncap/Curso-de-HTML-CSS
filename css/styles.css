@@ -74,9 +74,10 @@ nav li a:hover{
 
 .products{
     background-image: url("../images/curve.webp");
-    max-height: 25px;
+    height: 95px;
     background-size: cover;
     background-position: center top;
+    background-repeat: no-repeat;
     padding: 10%;
     display: flex;
     justify-content: center;
@@ -94,6 +95,7 @@ nav li a:hover{
     background: var(--white-color);
     padding: var(--espace);
     box-shadow: var(--box);
+    margin: 0px auto;
 }
 
 .img_content{
@@ -203,6 +205,7 @@ text-align: center;
 .testimonies-content p{
     margin: 10px;
     font-size: var(--normal-16);
+    text-align: center;
 }
 
 .testimonies-person{
