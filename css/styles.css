@@ -15,6 +15,7 @@
 
 /* ---box-shadow */
 --box: 0 0 2px 1px #c1bcbc;
+--box-double: 0 3px 5px #c1bcbc;
 }
 /* -------Variables */
 
@@ -66,8 +67,8 @@ nav li a:hover{
 /* ---------------Main section */
 
 .main_section{
-    border: 1px solid red;
-    padding: 13% 28%;
+    /* border: 1px solid red; */
+    padding: 10% 28%;
     text-align: center;
 }
 
@@ -83,7 +84,7 @@ nav li a:hover{
 
 .product{
     padding: var(--espace);
-    margin-top: -290px;
+    margin-top: -230px;
     /* width: 30%; */
     
 }
@@ -138,9 +139,10 @@ nav li a:hover{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid grey;
-    /* margin: 10px; */
-    box-shadow: 5px 5px 5px #aaa
+    /* border-bottom: 1px solid grey; */
+    /* margin: 0px 10px ; */
+    box-shadow: 1px 3px 5px #aaa;
+    
 }
 
 .information-content{
@@ -170,25 +172,37 @@ margin: var(--espace);
 
 /* ------------------testimonies */
 .testimonies{
-    height: 300px;
+    height: 350px;
     text-align: center;
+    padding-top: 40px;
    
    
 }
 .testimonies-content{
     /* border: 1px solid grey; */
-    margin: 20px;
+    margin: 10px;
     height: 200px;
     width: 200px;
-    box-shadow: var(--box);
+    box-shadow: var(--box-double);
     border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.testimonies-content h2{
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.testimonies-content p{
+    margin: 10px;
 }
 
 .testimonies-person{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    
  
 }
 
@@ -205,7 +219,7 @@ margin: var(--espace);
 
 /* ------------------footer */
 .footer{
-    height: 50px;
+    height: 100px;
     background: rgb(48, 46, 46);
    
 }
