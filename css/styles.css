@@ -27,7 +27,7 @@ html, body{
     margin: 0px;
     padding: 0px;
     background-color: rgb(254, 253, 255);
-    font-size: var(--normal);
+    font-size: var(--normal-14);
     font-family: Helvetica;
 }
 
@@ -136,7 +136,7 @@ nav li a:hover{
 .information{
    background: var(--white-color);
     height: 300px;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
     /* border-bottom: 1px solid grey; */
@@ -147,10 +147,9 @@ nav li a:hover{
 
 .information-content{
 background: var(--white-color);
-width: 250px;
-padding: 10px;
+width: 300px;
 text-align: center;
-margin: var(--espace);
+/* margin: var(--espace); */
 }
 
 .information-img{
@@ -164,8 +163,15 @@ margin: var(--espace);
     
 }
 
+.information-content h1{
+    /* text-align: left; */
+    margin: var(--espace);
+}
+
 .information-content p{
     text-align: left;
+    margin: var(--espace);
+    font-size: var(--normal-16);
 }
 
 
@@ -174,18 +180,18 @@ margin: var(--espace);
 .testimonies{
     height: 350px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 10px;
    
    
 }
 .testimonies-content{
     /* border: 1px solid grey; */
-    margin: 10px;
-    height: 200px;
+    margin: 0px 10px;
+    height: 240px;
     width: 200px;
     box-shadow: var(--box-double);
     border-radius: 10px;
-    margin: 10px;
+   
     
 }
 
@@ -196,6 +202,7 @@ margin: var(--espace);
 
 .testimonies-content p{
     margin: 10px;
+    font-size: var(--normal-16);
 }
 
 .testimonies-person{
