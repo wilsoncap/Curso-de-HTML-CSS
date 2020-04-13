@@ -226,12 +226,37 @@ text-align: center;
 }
 
 
-
-
-
 /* ------------------footer */
 .footer{
     height: 100px;
     background: rgb(48, 46, 46);
    
 }
+
+
+/* ------------------producto */
+.row{
+    margin-bottom: 10px;
+}
+
+.row img{
+    height: 250px;
+}
+
+.col-4{
+    margin: auto;
+    text-align: center;
+}
+
+.col-8 {
+   margin: auto;
+}
+
+.col-8 p{
+    padding: 10px;
+ }
+
+
+
+
+
