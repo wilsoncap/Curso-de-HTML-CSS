@@ -12,8 +12,18 @@
    .main-section{
        padding: 4%;
    }
-   .content{
-       padding: auto;
+   .information, .testimonies{
+       display: inherit;
+       height: auto;
    }
 
+  .testimonies-content{
+      margin: 20px auto;
+  }
+
+  .information-content{
+      margin: 40px auto;
+  }
+
+ 
 }
