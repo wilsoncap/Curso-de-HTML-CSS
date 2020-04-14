@@ -36,6 +36,12 @@ h1{
     margin-bottom: 0;
 }
 
+p, label{
+    font-size: var(--normal);
+    
+}
+
+
 nav{
     /* border: 1px solid red; */
     background: var(--green-color);
@@ -229,8 +235,21 @@ text-align: center;
 /* ------------------footer */
 .footer{
     height: 100px;
-    background: rgb(48, 46, 46);
+    background: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--espace-double);
    
+}
+
+.option{
+    color: var(--white-color);
+}
+
+.option a{
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 
@@ -257,6 +276,34 @@ text-align: center;
  }
 
 
+/* ------------------Venta*/
+
+.modulo-pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--espace);
+    height: fit-content;
+}
 
 
+.modulo-pago-imagen{
+    max-width: 250px;
+    margin: auto;
+    height: fit-content;
+}
 
+
+.data{
+    margin-top: var(--espace);
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid var(--black-color);
+    /* esta etiqueta se utiliza para dar anchos fijo a las cajas */
+    box-sizing: border-box;
+}
+
+.modulo-pago .main_button{
+    margin-top: 10px;
+    border-radius: 5px;
+}
